@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Svetlana Kulakova](https://up.htmlacademy.ru/adaptive/27/user/2154631).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Сигов] (https://htmlacademy.ru/profile/crazer)
 
 ---
 
