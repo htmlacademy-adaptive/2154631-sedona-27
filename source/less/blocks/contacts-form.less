@@ -1,11 +1,23 @@
 .contacts-form__wrapper {
   padding: 24px 20px 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-form__field {
+  display: grid;
+  margin: 0 auto;
+  margin-bottom: 16px;
 }
 
 .contacts-form__field-control {
   background: #f2f2f2;
   width: 222px;
   height: 58px;
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+  }
 }
 
 .contacts-form__field-label {

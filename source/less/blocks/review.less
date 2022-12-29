@@ -37,3 +37,22 @@
   right: 0;
   padding-top: 24px;
 }
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 128px;
+    margin: 0 120px;
+  }
+}

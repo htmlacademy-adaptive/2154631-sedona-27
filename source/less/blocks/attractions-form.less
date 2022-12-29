@@ -1,5 +1,16 @@
 .attractions-form__wrapper {
   padding: 24px 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .attractions-form__text {
@@ -7,4 +18,11 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+}
+
+.attractions-form__field {
+  @media (min-width: @tablet-width) {
+    column-count: 2;
+    display: block;
+  }
 }

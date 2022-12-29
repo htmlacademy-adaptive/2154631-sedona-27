@@ -19,22 +19,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--current">
-              <a>
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a>
+              <a class="site-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
             <li class="site-list__item">
-              <a>
+              <a class="site-list__link" href="form.html">
                 Форма отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">
                 HTML Academy
               </a>
             </li>
@@ -59,34 +59,28 @@
               <dd class="reasons__number">— №1 —</dd>
               <dd class="reasons__description">Седона — не аттракцион для туристов, там течёт своя жизнь</dd>
             </div>
-            <div class="reasons__item photo">
+            <div class="reasons__item photo-city">
               <img class="reasons__photo" src="./img/photo-city1.png" width=320 height=260 alt="Фото Седоны.">
             </div>
-            <section class="recomendations">
-              <div class="recomendations__wrapper">
-                <dl class="recomendations__list">
-                  <div class="recomendations__item">
-                    <dt class="recomendations__title">Жильё</dt>
-                    <dd class="recomendations__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
-                  </div>
-                  <div class="recomendations__item">
-                    <dt class="recomendations__title">Еда</dt>
-                    <dd class="recomendations__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</dd>
-                  </div>
-                  <div class="recomendations__item">
-                    <dt class="recomendations__title">Сувениры</dt>
-                    <dd class="recomendations__description">Не только китайского, но и местного производства!</dd>
-                  </div>
-                </dl>
-              </div>
-            </section>
+            <div class="reasons__item reasons__item--recomendations">
+              <dt class="reasons__title">Жильё</dt>
+              <dd class="reasons__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</dd>
+            </div>
+            <div class="reasons__item reasons__item--recomendations">
+              <dt class="reasons__title">Еда</dt>
+              <dd class="reasons__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</dd>
+            </div>
+            <div class="reasons__item reasons__item--recomendations">
+              <dt class="reasons__title">Сувениры</dt>
+              <dd class="reasons__description">Не только китайского, но и местного производства!</dd>
+            </div>
             <div class="reasons__item reasons__item--important">
               <dt class="reasons__title">Там есть мост дьявола</dt>
               <dd class="reasons__number">— №2 —</dd>
               <dd class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</dd>
             </div>
-            <div class="reasons__item photo">
-              <img class="reasons__photo" src="./img/photo-bridge1.png" width=320 height=260 alt="Фото мост Дьявола.">
+            <div class="reasons__item photo-bridge">
+              <img class="reasons__photo photo" src="./img/photo-bridge1.png" width=320 height=260 alt="Фото мост Дьявола.">
             </div>
             <div class="reasons__item">
               <dt class="reasons__title">Небольшая площадь</dt>
@@ -109,10 +103,8 @@
       <section class="interested">
         <h2 class="visually-hidden">Поиск гостиниц</h2>
         <div class="interested__wrapper">
-          <header class="interested__header">
-            <h2 class="interested__question">Заинтересовались?</h2>
-            <p class="interested__intro">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-          </header>
+          <p class="interested__header">Заинтересовались?</p>
+          <p class="interested__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
           <a class="interested__to-all-hotels button" href="#">Поиск гостиницы в Седоне</a>
         </div>
       </section>
