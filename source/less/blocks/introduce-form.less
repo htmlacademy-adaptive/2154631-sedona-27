@@ -1,6 +1,6 @@
-.introduce-form {
-  width: 320px;
-}
+// .introduce-form {
+//   // width: 320px;
+// }
 
 //   @media (min-width: @tablet-width) {
 //     width: 648px;
@@ -14,8 +14,14 @@
 .introduce-form__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 24px 20px 29px 20px;
   margin: 0 auto;
+  border-right: 1px solid #dbdbdb;
+  // margin-left: 43px;
+
+  @media (max-width: @mobile-width-only) {
+    border-right: none;
+    padding: 24px 34px 29px 20px;
+  }
 }
 
 .introduce-form__field {
@@ -25,16 +31,23 @@
 }
 
 .introduce-form__title {
-  padding: 0 55px 20px 55px;
+  padding: 24px 55px 20px 55px;
 }
 
 .introduce-form__field-control {
   background: #f2f2f2;
-  width: 280px;
+  width: 264px;
   height: 58px;
+  border: none;
+  padding: 0;
+  padding-left: 16px;
 
   @media (min-width: @desktop-width) {
     width: 430px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 43px;
   }
 }
 
@@ -45,17 +58,9 @@
   color: #333333;
   align-items: center;
   text-transform: uppercase;
-}
+  padding-left: 16px;
 
-.form:not(:last-child)::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid #d6d6d6;
-  width: 100%;
-  order: 2;
-  flex-grow: 1;
-  align-items: center;
-  left: 0;
-  right: 0;
-  padding-top: 8px;
+  @media (max-width: @mobile-width-only) {
+    padding-left: 16px;
+  }
 }

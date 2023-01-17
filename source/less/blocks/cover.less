@@ -1,3 +1,78 @@
 .cover {
-  background-image: url("../../img/back-mobile.jpg");
+  height: 389px;
+  background-color: #ffffff;
+  background-image: url("../../img/sedona-mobile.svg"), url("../../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center center, center;
+
+  @media (min-width: @mobile-width-only) {
+    height: 389px;
+    background-color: #ffffff;
+    background-image: url("../../img/sedona-mobile.svg"), url("../../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center center, center;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 518px;
+    background-color: #ffffff;
+    background-image: url("../../img/sedona-tablet.svg"), url("../../img/back-desktop.jpg.png");
+    background-repeat: no-repeat;
+    background-position: center center, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/sedona-tablet.svg"), url("../../img/back-desktop.jpg@2x.png");
+      background-size: 461px auto, 768px 100%;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 518px;
+    background-color: #ffffff;
+    background-image: url("../../img/sedona-desktop.svg"), url("../../img/back-desktop.jpg.png");
+    background-repeat: no-repeat;
+    background-position: center center, center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/sedona-tablet.svg"), url("../../img/back-desktop.jpg@2x.png");
+      background-size: 461px auto, 1200px auto;
+    }
+  }
+}
+
+.cover__catalog {
+  @media (max-width: @mobile-width-only) {
+    height: 214px;
+    background-color: #ffffff;
+    background-image: url("../../img/SEDONA-letters-mobile.svg"), url("../../img/catalog-back-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center center, center;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 290px;
+    background-color: #ffffff;
+    background-image: url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop.jpg.png");
+    background-repeat: no-repeat;
+    background-position: center center, center;
+
+    // @media (min-resolution: 2dppx) {
+    //   height: 290px;
+    //   background-image: url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop.jpg@2x.png");
+    //   background-size: 457px auto, 768px auto;
+    // }
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 290px;
+    background-color: #ffffff;
+    background-image: url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center center, center;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../../img/sedona-tablet.svg"), url("../../img/catalog-back-desktop.jpg@2x.png");
+    //   background-size: 457px auto, 1200px auto;
+    // }
+  }
 }

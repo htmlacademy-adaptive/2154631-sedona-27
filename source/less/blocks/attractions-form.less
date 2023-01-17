@@ -1,15 +1,80 @@
 .attractions-form__wrapper {
-  padding: 24px 20px 0 20px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
 
-  @media (min-width: @tablet-width) {
-    height: 60px;
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    flex-direction: column;
+    padding: 0 20px 24px 20px;
   }
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .attractions-form__header {
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .attractions-form__header p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .attractions-form__header::before,
+  .attractions-form__header::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+  }
+
+  .attractions-form__header::before {
+    margin-left: -100%;
+    left: -55px;
+  }
+
+  .attractions-form__header::after {
+    margin-right: -100%;
+    right: -55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .attractions-form__header::before,
+  .attractions-form__header::after {
+    width: 280px;
+  }
+}
+
+.attractions-form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    margin: 8px 144px 42px;
+  }
+}
+
+.attractions-form__item {
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.attractions-form__title {
+  @media (max-width: @mobile-width-only) {
+    padding: 24px 42px 20px;
   }
 }
 
@@ -18,11 +83,34 @@
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+  margin-left: 62px;
 }
 
 .attractions-form__field {
-  @media (min-width: @tablet-width) {
-    column-count: 2;
-    display: block;
+  height: 46px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+
+  // @media (min-width: @tablet-width) {
+  //   display: block;
+  // }
+}
+
+.attractions-form__mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background: #f2f2f2;
+
+  @media (max-width: @mobile-width-only) {
+    // margin-bottom: 16px;
   }
+}
+
+.attractions-form__input[type="checkbox"]:checked + .attractions-form__mark {
+  background-image: url("../../img/tick.svg.svg");
+  background-color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-position: center;
 }

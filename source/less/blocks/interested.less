@@ -1,6 +1,9 @@
 .interested {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 49px;
 
   @media (min-width: @tablet-width) {
     width: 768px;
@@ -20,9 +23,15 @@
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
-  padding-top: 38px;
-  padding-bottom: 49px;
   text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 38px 29px 32px 29px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 166px 40px;
+  }
 }
 
 .interested__header {
@@ -33,7 +42,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 32px;
+  margin: 0;
+  margin-top: 32px;
 }
 
 // .interested__intro {
@@ -55,3 +65,21 @@
 //   margin: 0;
 //   padding: 0;
 // }
+
+.interested__to-all-hotels {
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 49px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 155px 0;
+  }
+}

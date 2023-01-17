@@ -8,7 +8,17 @@
 }
 
 .review__wrapper {
-  padding-top: 36px 7px 28px 7px;
+  @media (max-width: @mobile-width-only) {
+    padding: 36px 7px 28px 7px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 166px 78px 166px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 384px 67px 382px;
+  }
 }
 
 .review__intro {
@@ -16,13 +26,29 @@
   font-size: 14px;
   line-height: 21px;
   color: #333333;
-  margin-top: 24px;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 24px 7px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    line-height: 24px;
+  }
 }
 
 .review__slogan {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 36px 7px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 .review::after {
@@ -38,21 +64,38 @@
   padding-top: 24px;
 }
 
-.user-info {
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+.review__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 49px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+
+  @media (max-width: @mobile-width-only) {
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    margin: 0 60px;
+    width: 42%;
+    margin-left: 8%;
+    margin-right: 50%;
+    margin-top: 48px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: @desktop-width) {
-    display: flex;
-    flex-direction: row;
-    column-gap: 128px;
-    margin: 0 120px;
+    width: 32%;
+    margin-left: 18%;
+    margin-right: 50%;
+    margin-top: 48px;
+    margin-bottom: 64px;
   }
 }
