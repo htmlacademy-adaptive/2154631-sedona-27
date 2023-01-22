@@ -1,0 +1,24 @@
+.main-header {
+  display: flex;
+  // flex-direction: column;
+  background-color: #ffffff;
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  @media (max-width: @mobile-width-only) {
+    width: 320px;
+  }
+}
+
+
+.site-list__item {
+  list-style: none;
+
+  &:active {
+    color: #766357;
+  }
+}

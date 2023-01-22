@@ -1,0 +1,116 @@
+.emotions__forms {
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+}
+
+.emotions__header {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .emotions__title {
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .emotions__title .emotions__header {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .emotions__title::before,
+  .emotions__title::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+  }
+
+  .emotions__title::before {
+    margin-left: -100%;
+    left: -55px;
+  }
+
+  .emotions__title::after {
+    margin-right: -100%;
+    right: -55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions__title::before,
+  .emotions__title::after {
+    width: 280px;
+  }
+}
+
+.emotions__wrapper {
+  // padding: 24px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.emotions__emotions-text {
+  border: 0 none;
+  background-color: #f2f2f2;
+  padding-top: 10px;
+  padding-left: 16px;
+
+  @media (max-width: @mobile-width-only) {
+    box-sizing: border-box;
+    width: 88%;
+    height: 150px;
+    padding-top: 18px;
+    padding-left: 22px;
+  }
+
+  @media (min-width: @tablet-width) {
+    box-sizing: border-box;
+    width: 84%;
+    height: 160px;
+    margin: 0 8%;
+    padding-top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    box-sizing: border-box;
+    width: 64%;
+    height: 160px;
+    margin: 0 18%;
+  }
+}
+
+.emotions__item {
+  @media (max-width: @mobile-width-only) {
+    width: 87%;
+    height: 150px;
+    padding: 16px;
+  }
+
+  @media (max-width: @tablet-width) {
+    width: 100%;
+    height: 160px;
+  }
+}
+
+.emotions__title {
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 2px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 28px;
+  }
+}

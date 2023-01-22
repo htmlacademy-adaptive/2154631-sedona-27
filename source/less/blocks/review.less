@@ -1,0 +1,114 @@
+.review {
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+}
+
+.review__wrapper {
+  @media (max-width: @mobile-width-only) {
+    padding: 36px 7px 4px 7px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding: 64px 166px 78px 166px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 115px 384px 40px 380px;
+  }
+}
+
+.review__intro {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+
+  @media (max-width: @mobile-width-only) {
+    margin: 24px 7px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    line-height: 24px;
+  }
+}
+
+.review__slogan {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    // margin: 36px 7px 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+}
+
+.review::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #d6d6d6;
+  width: 100%;
+  order: 2;
+  flex-grow: 1;
+  align-items: center;
+  left: 0;
+  right: 0;
+  padding-top: 24px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.review__button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 16px 49px;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+
+  @media (max-width: @mobile-width-only) {
+    width: 280px;
+    height: 58px;
+    margin: 22px 20px 54px;
+    padding: 0;
+    padding-top: 6px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 42%;
+    margin-left: 8%;
+    margin-right: 50%;
+    margin-top: 48px;
+    margin-bottom: 64px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32%;
+    margin-left: 18%;
+    margin-right: 50%;
+    margin-top: 42px;
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,263 @@
+.impression-form {
+  @media (min-width: @tablet-width) {
+    margin-top: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 56px;
+  }
+}
+
+.impression-form__wrapper {
+  @media (min-width: @tablet-width) {
+    margin-left: 56px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 132px;
+    margin-bottom: 60px;
+  }
+}
+
+.impression-form__list {
+  list-style-type: none;
+  margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 3px 20px;
+  }
+
+  @media (min-width: @tablet-width) {
+    // display: block;
+    // column-count: 2;
+    // column-width: 280px;
+    // padding-left: 12%;
+    // padding-right: 12%;
+    // padding-top: 28px;
+    // padding-bottom: 48px;
+    display: grid;
+    grid-template-columns: 296px 280px;
+    row-gap: 1px;
+    margin-top: 36px;
+    position: relative;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    column-gap: 28px;
+    margin-top: 44px;
+  }
+}
+
+.impression-form__field {
+  display: flex;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+.impression-form__item {
+  display: flex;
+  align-items: center;
+  height: 46px;
+
+
+  @media (max-width: @mobile-width-only) {
+    width: 88%;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.impression-form__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 62px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 18px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .impression-form__header {
+    margin-top: 20px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .impression-form__header p {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .impression-form__header::before,
+  .impression-form__header::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 123px;
+    height: 1px;
+    background-color: #dbdbdb;
+    position: relative;
+  }
+
+  .impression-form__header::before {
+    margin-left: -100%;
+    left: -55px;
+  }
+
+  .impression-form__header::after {
+    margin-right: -100%;
+    right: -55px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression-form__header::before,
+  .impression-form__header::after {
+    width: 280px;
+  }
+}
+
+// .impression-form__wrapper {
+//   display: flex;
+//   flex-wrap: wrap;
+
+//   @media (max-width: @mobile-width-only) {
+//     padding: 0 20px;
+//     flex-direction: column;
+//   }
+
+
+//   @media (min-width: @tablet-width) {
+//     // column-count: 2;
+//     // display: block;
+//     padding: 0 60px;
+//     flex-direction: column;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     flex-direction: row;
+//   }
+// }
+
+// .impression-form__list {
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+
+//   @media (min-width: @tablet-width) {
+//     column-count: 2;
+//     margin: 28px 96px 48px;
+//   }
+
+//   @media (min-width: @desktop-width) {
+//     width: 960px;
+//     margin: 28px 96px 48px;
+//   }
+// }
+
+// .impression-form__list .impression-form__item {
+//   @media (min-width: @desktop-width) {
+//     display: inline;
+//     margin-right: 28px;
+//   }
+// }
+
+.impression-form__title {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 26px;
+  }
+}
+
+// .impression__mark {
+//   background: #f2f2f2;
+//   margin-bottom: 16px;
+// }
+
+// .impression-form__text {
+//   font-weight: 700;
+//   font-size: 18px;
+//   line-height: 26px;
+//   color: #000000;
+//   margin-left: 40px;
+//   padding-top: 10px;
+// }
+
+// .impression-form__field {
+//   grid-column: 1 / 3;
+//   position: relative;
+//   display: flex;
+//   height: 46px;
+//   padding-left: 16px;
+//   margin-bottom: 16px;
+// }
+
+.impression-form__mark {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background: #f2f2f2;
+
+  @media (max-width: @mobile-width-only) {
+    margin-left: 7%;
+    margin-bottom: 16px;
+  }
+}
+
+// .impression-form__field .impression-form__mark:hover {
+//   background: #e5e5e5;
+// }
+
+// .impression-form__field:active .impression-form__mark {
+//   background: #d5d5d5;
+// }
+
+.impression-form__mark:hover {
+  background: #e5e5e5;
+}
+
+.impression-form__mark:focus {
+  outline: 3px solid #f2f2f2;
+  outline-offset: -3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.impression-form__mark:active {
+  outline: 2px solid #f2f2f2;
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.impression-form__input[type="radio"] + .impression-form__mark {
+  border-radius: 50%;
+}
+
+.impression-form__input[type="radio"]:checked + .impression-form__mark {
+  background-image: url("../../img/radio.svg");
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.impression-form__input[type="radio"]:focus + .impression-form__mark {
+  outline: 3px solid #f2f2f2;
+  outline-offset: -3px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+}

@@ -1,0 +1,128 @@
+.footer {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (max-width: @mobile-width-only) {
+    flex-direction: column;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (max-width: @mobile-width-only) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-top: 24px;
+  }
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 42px;
+    padding-top: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 38px;
+    margin-left: 0;
+    padding-right: 14px;
+  }
+}
+
+.footer__hashtag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    width: 33%;
+  }
+}
+
+.footer__hashtag-text {
+  margin: 0;
+  margin-block: 0;
+  margin-inline: 0;
+  // margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.footer__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 6px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    justify-content: center;
+    width: 33.3%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.footer__link-svg {
+  fill: #81b3d2;
+}
+
+
+.footer__link-svg:hover {
+  fill: #669ec0;
+}
+
+
+.footer__link-svg:active {
+  fill: #5496bd;
+}
+
+path.socials-inner {
+  fill: #ffffff;
+}
+
+.footer__link-svg path.socials-inner {
+  opacity: 0.3;
+}
+
+path.socials-inner:active {
+  fill: #ffffff4d;
+}
