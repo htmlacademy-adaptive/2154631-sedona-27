@@ -1,4 +1,3 @@
-
 .navigation__logo {
   height: 96px;
   text-align: center;
@@ -28,10 +27,10 @@
   border: none;
   padding: 0;
 
-  &:hover,
-  &:active {
-    background-color: #81b3d2;
-  }
+  // &:hover,
+  // &:active {
+  //   background-color: #81b3d2;
+  // }
 }
 
 // Мобилка
@@ -172,7 +171,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding-top: 18px;
   }
 
   .navigation__logo {
@@ -193,6 +191,8 @@
     width: 100%;
     height: 56px;
     margin: 0;
+    padding-left: 50px;
+    margin-right: 22px;
   }
 
   .navigation__wrapper {
@@ -208,7 +208,7 @@
 
   .navigation__item:first-child,
   .navigation__item:last-child {
-    width: 20%;
+    width: 15%;
   }
 
   .navigation__item:nth-child(3) {
@@ -217,6 +217,7 @@
 
   .navigation__item:nth-child(3) > .navigation__link {
     justify-content: center;
+    padding-left: 24px;
   }
 
   .navigation__toggle {
@@ -241,8 +242,41 @@
 // Десктоп
 
 @media (min-width: @desktop-width) {
+  .navigation__list {
+    padding: 0;
+    // margin-right: 60px;
+    margin: 0;
+  }
+
   .navigation__wrapper {
     width: 960px;
+  }
+
+  .navigation__item {
+    width: 192px;
+  }
+
+  .navigation__item:first-child {
+    padding-left: 82px;
+  }
+
+  .navigation__item:nth-child(2) {
+    width: 400px;
+    padding-left: 30px;
+  }
+
+  .navigation__item:nth-child(3) {
+    width: 300px;
+  }
+
+  .navigation__item:nth-child(3) > .navigation__link {
+    margin-left: 76px;
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  .navigation__link:last-child {
+    padding-left: 10px;
   }
 
   .navigation__toggle {
@@ -250,6 +284,6 @@
   }
 
   .site-list {
-    width: 960px;
+    width: 1200px;
   }
 }

@@ -28,13 +28,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 10px;
+    gap: 32px;
+    padding-top: 24px;
   }
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    margin-left: 45px;
+    margin-left: 10px;
     margin-right: 42px;
+    padding-top: 34px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 38px;
+    margin-left: 0;
+    padding-right: 14px;
   }
 }
 
@@ -75,6 +83,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 6px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -90,4 +99,30 @@
     margin: 0;
     padding: 0;
   }
+}
+
+.footer__link-svg {
+  fill: #81b3d2;
+}
+
+
+.footer__link-svg:hover {
+  fill: #669ec0;
+}
+
+
+.footer__link-svg:active {
+  fill: #5496bd;
+}
+
+path.socials-inner {
+  fill: #ffffff;
+}
+
+.footer__link-svg path.socials-inner {
+  opacity: 0.3;
+}
+
+path.socials-inner:active {
+  fill: #ffffff4d;
 }

@@ -2,6 +2,14 @@
   padding: 24px 20px 10px 20px;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 16px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 10px;
+  }
 }
 
 .contacts-form__field {
@@ -35,6 +43,11 @@
   @media (min-width: @desktop-width) {
     width: 430px;
   }
+
+  @media (min-width: @tablet-width) {
+    margin-left: 34px;
+    width: 330px;
+  }
 }
 
 .contacts-form__field-label {
@@ -45,6 +58,10 @@
   text-transform: uppercase;
   color: #333333;
   padding-left: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 52px;
+  }
 }
 
 .contacts-form__title {
@@ -60,5 +77,10 @@
   @media (max-width: @mobile-width-only) {
     margin-left: 21px;
     margin-right: 21px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 26px;
+    margin-right: 8px;
   }
 }

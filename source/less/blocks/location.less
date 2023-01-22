@@ -1,18 +1,22 @@
 .location {
   align-items: center;
   text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 16px;
+  }
 }
 
 .location iframe {
   border: none;
   display: block;
 
-  @media (min-width: tablet-width) {
+  @media (min-width: @tablet-width) {
     width: 100%;
     height: 350px;
   }
 
-  @media (min-width: desktop-width) {
+  @media (min-width: @desktop-width) {
     width: 100%;
     height: 350px;
   }

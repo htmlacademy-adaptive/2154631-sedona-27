@@ -17,9 +17,21 @@
 
 .reasons__title {
   font-weight: 700;
-  font-size: 18px;
   line-height: 26px;
   padding-bottom: 16px;
+  padding-top: 8px;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-right: 16px;
+    margin-left: 16px;
+  }
 }
 
 .reasons__list {
@@ -30,6 +42,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 256px 331px 256px 256px;
   }
 
   @media (min-width: @desktop-width) {
@@ -46,12 +59,20 @@
   text-transform: uppercase;
   padding: 32px 18px 16px;
 
+  @media (max-width: @mobile-width-only) {
+    background: url("../../img/mobile-divider.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: #81b3d2;
+    background-size: cover;
+  }
+
   @media (min-width: @tablet-width) {
     padding: 47px 124px 56px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 59px 359px 44px 357px;
+    padding: 59px 359px 44px 356px;
   }
 }
 
@@ -60,16 +81,38 @@
   font-size: 14px;
   line-height: 21px;
   padding-top: 35px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-bottom: 38px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 30px;
+  }
 }
 
 .reasons__slogan {
   font-weight: 700;
-  font-size: 18px;
   line-height: 26px;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (max-width: @mobile-width-only) {
+    font-size: 18px;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.reasons__slogan br {
+  @media (min-width: @tablet-width) {
+    font-style: 21px;
+    display: none;
+  }
 }
 
 .reasons__item {
@@ -78,14 +121,29 @@
   text-transform: uppercase;
   margin: 0;
   padding: 41px 33px;
+
+  @media (max-width: @mobile-width-only) {
+    padding: 41px 21px;
+    padding-bottom: 6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 54px 33px;
+  }
 }
 
 .reasons__item--recomendations {
   background-color: #ffffff;
-  padding-top: 25px;
 
   @media (min-width: @tablet-width) {
     padding: 60px 0 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
   }
 }
 
@@ -100,20 +158,30 @@
   margin: 0;
 
   @media (max-width: @mobile-width-only) {
-    padding: 37px 18px;
-    padding-bottom: 13px;
+    padding: 34px 18px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: @tablet-width) {
     padding-left: 33px;
     padding-right: 33px;
-    padding-top: 52px;
+    padding-top: 44px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 62px;
+    padding-right: 64px;
+    padding-top: 44px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .reasons__info {
     padding: 14px 33px 60px;
+  }
+
+  .reasons__info .reasons__title {
+    padding-bottom: 20px;
   }
 
   .reasons__info .reasons-description {
@@ -123,11 +191,39 @@
   }
 }
 
-@media (max-width: @mobile-width-only) {
-  .reasons__item--secondary {
-    border-bottom: 1px solid #d6d6d6;
+.reasons__info .reasons__title {
+  @media (min-width: @desktop-width) {
+    padding-bottom: 20px;
+    padding-top: 14px;
   }
 }
+
+.reasons__info--housing br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons__info .reasons__description {
+  @media (min-width: @desktop-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
+.reasons__info--food .reasons__description {
+  @media (min-width: @tablet-width) {
+    padding-left: 22px;
+    padding-right: 28px;
+  }
+}
+
+.reasons__item--secondary .reasons__title br {
+  @media (max-width: @tablet-width) {
+    display: none;
+  }
+}
+
 
 .reasons__photo-city {
   width: 320px;
@@ -170,7 +266,7 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
-  padding-bottom: 21px;
+  padding-bottom: 19px;
 }
 
 .reasons__description {
@@ -197,11 +293,29 @@
 //   border-bottom: 1px solid #d6d6d6;
 // }
 
+.reasons__pic {
+  @media (max-width: @mobile-width-only) {
+    width: 40px;
+    height: 40px;
+    padding-right: 6px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 77px;
+    height: 72px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 79px;
+    height: 72px;
+  }
+}
+
 @media (max-width: @mobile-width-only) {
   .reasons__pic {
     width: 40px;
     height: 40px;
-    padding-right: 9px;
+    padding-right: 6px;
   }
 
   .reasons__info {
@@ -212,7 +326,7 @@
 
   .reasons__item--recomendations {
     background-color: #ffffff;
-    padding-top: 25px;
+    padding-top: 16px;
     display: flex;
     justify-content: space-between;
   }
@@ -221,8 +335,72 @@
     padding-bottom: 46px;
   }
 
-  .reasons__title {
-    padding-top: 8px;
+  .reasons__info .reasons-description {
+    padding-left: 1px;
+  }
+
+  .reasons__item--recomendations .reasons__title {
+    padding-top: 10px;
+    padding-bottom: 16px;
+  }
+
+  .reasons__item--important br,
+  .reasons__item--recomendations br {
+    display: none;
+  }
+
+  .reasons__info--souvenirs {
+    margin-left: 6px;
+  }
+
+  .reasons__item--important--second {
+    padding-top: 38px;
+    padding-bottom: 36px;
+  }
+
+  .reasons__item--secondary {
+    border-bottom: 1px solid #d6d6d6;
+    padding-top: 20px;
+    padding-bottom: 21px;
+  }
+
+  .reasons__item--secondary_third,
+  .reasons__item--secondary_fourth {
+    padding-top: 26px;
+    padding-bottom: 24px;
   }
 }
 
+.reasons__item--secondary br {
+  @media (width: @tablet-width) {
+    display: none;
+  }
+}
+
+.reasons__item--secondary_third {
+  @media (min-width: @tablet-width) {
+    padding-top: 35px;
+    padding-right: 50px;
+    padding-left: 48px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 42px;
+    padding-right: 50px;
+    padding-left: 48px;
+  }
+}
+
+.reasons__description--secondary br {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reasons__description--secondary {
+  @media (min-width: @desktop-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+  }
+}
