@@ -89,14 +89,16 @@
 }
 
 .emotions__item {
+  resize: none;
+  
   @media (max-width: @mobile-width-only) {
-    width: 87%;
+    width: 279px;
     height: 150px;
     padding: 16px;
   }
 
-  @media (max-width: @tablet-width) {
-    width: 100%;
+  @media (min-width: @tablet-width) {
+    width: 648px;
     height: 160px;
   }
 }

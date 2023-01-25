@@ -44,7 +44,6 @@
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <!-- <div class="navigation__wrapper"> -->
             <ul class="navigation__list site-list">
               <li class="navigation__item navigation__item--active">
                 <a class="navigation__link navigation__link--current" href="index.html">
@@ -67,7 +66,6 @@
                 </a>
               </li>
             </ul>
-          <!-- </div> -->
         </nav>
       </header>
       <main class="main-container">
@@ -81,68 +79,68 @@
               <p class="reasons__slogan">Седона — небольшой <br>городок в Аризоне, <br> заслуживающий большего!</p>
               <p class="reasons__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
             </header>
-            <dl class="reasons__list">
-              <div class="reasons__item reasons__item--important">
-                <dt class="reasons__title">Настоящий<br> городок</dt>
-                <dd class="reasons__number">— №1 —</dd>
-                <dd class="reasons__description">Седона не аттракцион для туристов, там течёт своя жизнь</dd>
-              </div>
-              <div class="reasons__item reasons__photo-city">
+            <ul class="reasons__list">
+              <li class="reasons__item reasons__item--important">
+                <p class="reasons__title">Настоящий<br> городок</p>
+                <p class="reasons__number">— №1 —</p>
+                <p class="reasons__description">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+              </li>
+              <li class="reasons__item reasons__photo-city">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="./img/photo-city-desktop.jpg 1x, img/photo-city-desktop2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="./img/photo-city-tablet.jpg 1x, ./img/photo-city-tablet2x.jpg 2x">
                   <img class="reasons__photo-city" src="./img/photo-city-mobile.jpg" width=320 height=260 srcset="./img/photo-city-mobile2x.jpg 2x" alt="Фото Седоны.">
                 </picture>
-              </div>
-              <div class="reasons__item reasons__item--recomendations">
+              </li>
+              <li class="reasons__item reasons__item--recomendations">
                 <img class="reasons__pic" src="./img/house.svg" alt="Жильё.">
                 <div class="reasons__info reasons__info--housing">
-                  <dt class="reasons__title">Жильё</dt>
-                  <dd class="reasons__description">Рекомендуем пожить в настоящем мотеле, все<br> как в кино!</dd>
+                  <p class="reasons__title">Жильё</p>
+                  <p class="reasons__description">Рекомендуем пожить в настоящем мотеле, все<br> как в кино!</p>
                 </div>
-              </div>
-              <div class="reasons__item reasons__item--recomendations">
+              </li>
+              <li class="reasons__item reasons__item--recomendations">
                 <img class="reasons__pic" src="./img/burger.svg" alt="Еда.">
                 <div class="reasons__info reasons__info--food">
-                  <dt class="reasons__title">Еда</dt>
-                  <dd class="reasons__description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</dd>
+                  <p class="reasons__title">Еда</p>
+                  <p class="reasons__description">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </div>
-              </div>
-              <div class="reasons__item reasons__item--recomendations">
+              </li>
+              <li class="reasons__item reasons__item--recomendations">
                 <img class="reasons__pic" src="./img/souvenirs.svg" alt="Сувениры.">
                 <div class="reasons__info reasons__info--souvenirs">
-                  <dt class="reasons__title">Сувениры</dt>
-                  <dd class="reasons__description">Не только китайского, <br>но и местного производства!</dd>
+                  <p class="reasons__title">Сувениры</p>
+                  <p class="reasons__description">Не только китайского, <br>но и местного производства!</p>
                 </div>
-              </div>
-              <div class="reasons__item reasons__item--important reasons__item--important--second">
-                <dt class="reasons__title">Там есть <br> мост дьявола</dt>
-                <dd class="reasons__number">— №2 —</dd>
-                <dd class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</dd>
-              </div>
-              <div class="reasons__item reasons__photo-bridge">
+              </li>
+              <li class="reasons__item reasons__item--important reasons__item--important--second">
+                <p class="reasons__title">Там есть <br> мост дьявола</p>
+                <p class="reasons__number">— №2 —</p>
+                <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </li>
+              <li class="reasons__item reasons__photo-bridge">
                 <picture>
                   <source media="(min-width:1200px)" srcset="./img/photo-bridge-desktop.jpg 1x, ./img/photo-bridge-desktop2x.jpg 2x">
                   <source media="(min-width:768px)" srcset="./img/photo-bridge-tablet.jpg 1x, ./img/photo-bridge-tablet2x.jpg 2x">
-                  <img class="reasons__photo-bridge photo" src="./img/photo-bridge-mobile.jpg" width=320 height=260 srcset="./img/photo-bridge-mobile2x.jpg x2" alt="Фото мост Дьявола.">
+                  <img class="reasons__photo-bridge photo" src="./img/photo-bridge-mobile.jpg" width=320 height=260 srcset="./img/photo-bridge-mobilex2.jpg 2x" alt="Фото мост Дьявола.">
                 </picture>
-              </div>
-              <div class="reasons__item reasons__item--secondary">
-                <dt class="reasons__title">Небольшая<br> площадь</dt>
-                <dd class="reasons__number">— №3 —</dd>
-                <dd class="reasons__description reasons__description--secondary">Все интересные места находятся очень близко</dd>
-              </div>
-              <div class="reasons__item reasons__item--secondary reasons__item--secondary_third">
-                <dt class="reasons__title">Красивая <br> дорога</dt>
-                <dd class="reasons__number">— №4 —</dd>
-                <dd class="reasons__description reasons__description--secondary">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</dd>
-              </div>
-              <div class="reasons__item reasons__item--secondary reasons__item--secondary_fourth">
-                <dt class="reasons__title">Мало <br> туристов</dt>
-                <dd class="reasons__number">— №5 —</dd>
-                <dd class="reasons__description reasons__description--secondary">Большинство едет в Гранд Каньон<br> и толпится там</dd>
-              </div>
-            </dl>
+              </li>
+              <li class="reasons__item reasons__item--secondary">
+                <p class="reasons__title">Небольшая<br> площадь</p>
+                <p class="reasons__number">— №3 —</p>
+                <p class="reasons__description reasons__description--secondary">Все интересные места находятся очень близко</p>
+              </li>
+              <li class="reasons__item reasons__item--secondary reasons__item--secondary_third">
+                <p class="reasons__title">Красивая <br> дорога</p>
+                <p class="reasons__number">— №4 —</p>
+                <p class="reasons__description reasons__description--secondary">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
+              </li>
+              <li class="reasons__item reasons__item--secondary reasons__item--secondary_fourth">
+                <p class="reasons__title">Мало <br> туристов</p>
+                <p class="reasons__number">— №5 —</p>
+                <p class="reasons__description reasons__description--secondary">Большинство едет в Гранд Каньон<br> и толпится там</p>
+              </li>
+            </ul>
           </div>
         </section>
         <section class="interested">
@@ -156,11 +154,9 @@
         <section class="location">
           <h2 class="visually-hidden">Седона на карте Аризоны</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d729582.999914527!2d-112.02020314174231!3d34.909367152680275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1673035770643!5m2!1sru!2sru"
-          width="100%"
           height="350"
           title="Седона на карте Аризоны"
           style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <!-- <img class="location__photo" src="./img/map-mobile.jpg.png" width=320 height=350 alt="Карта Аризоны."> -->
         </section>
       </main>
       <footer class="footer">
@@ -198,7 +194,6 @@
             </ul>
           </div>
           <div class="footer__copyright copyright">
-            <!-- <b class="copyright__text">Разработано</b> -->
             <a class="copyright__link" href="https://htmlacademy.ru/">
               <p class="copyright__text">Разработано</p>
               <svg aria-hidden="true" focusable="false" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="currentColor"/></svg>
