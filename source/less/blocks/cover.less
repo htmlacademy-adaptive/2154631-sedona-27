@@ -1,79 +1,79 @@
 .cover {
   height: 389px;
-  background-color: #ffffff;
-  background-image: url("../../img/desktop-intro-triangle.svg.svg"), url("../../img/sedona-mobile.svg"), url("../../img/back-mobile.jpg");
+  background-color: #81b3d2;
+  background-image: url("../../img/intro-triangle.svg"), url("../../img/sedona-mobile.svg"), url("../../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position: bottom, center center, center;
 
-  @media (min-width: @mobile-width-only) {
+  @media (max-width: @mobile-width-only) {
     height: 389px;
-    background-color: #ffffff;
-    background-image: url("../../img/desktop-intro-triangle.svg.svg"), url("../../img/sedona-mobile.svg"), url("../../img/back-mobile.jpg");
+    background-color: #81b3d2;
+    background-image: url("../../img/intro-triangle.svg"), url("../../img/sedona-mobile.svg"), url("../../img/back-mobile.jpg");
     background-repeat: no-repeat;
     background-position: bottom, center center, center;
   }
 
   @media (min-width: @tablet-width) {
     height: 518px;
-    background-color: #ffffff;
-    background-image: url("../../img/sedona-tablet.svg"), url("../../img/back-desktop.jpg");
+    background-color: #81b3d2;
+    background-image: url("../../img/tablet-intro-triangle.svg"), url("../../img/sedona-tablet.svg"), url("../../img/back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center center, center;
+    background-position: bottom, center center, center;
 
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/sedona-tablet.svg"), url("../../img/back-desktop2x.jpg");
-      background-size: 461px auto, 768px 100%;
+      background-image: url("../../img/tablet-intro-triangle.svg"), url("../../img/sedona-tablet.svg"), url("../../img/back-desktop2x.jpg");
+      background-size: 100%, 461px auto, 768px 100%;
     }
   }
 
   @media (min-width: @desktop-width) {
     height: 518px;
-    background-color: #ffffff;
-    background-image: url("../../img/sedona-desktop.svg"), url("../../img/back-desktop.jpg");
+    background-color: #81b3d2;
+    background-image: url("../../img/desktop-intro-triangle.svg"), url("../../img/sedona-desktop.svg"), url("../../img/back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center center, center;
+    background-position: bottom, 372px 79px, center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/sedona-tablet.svg"), url("../../img/back-desktop2x.jpg");
-      background-size: 461px auto, 1200px auto;
+      background-image: url("../../img/desktop-intro-triangle.svg"), url("../../img/sedona-tablet.svg"), url("../../img/back-desktop2x.jpg");
+      background-size: 100%, 461px auto, 1200px auto;
     }
   }
 }
 
-.main-container-cover__catalog {
+.cover-catalog {
   @media (max-width: @mobile-width-only) {
     height: 158px;
-    background-color: #ffffff;
-    background-image: url("../../img/intro-triangle.svg.svg"), url("../../img/SEDONA-letters-mobile.svg"), url("../../img/catalog-back-mobile.jpg");
+    background-color: #81b3d2;
+    background-image: url("../../img/intro-triangle.svg"), url("../../img/SEDONA-letters-mobile.svg"), url("../../img/catalog-back-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: bottom, center center, center;
+    background-position: bottom, 46px 52px, center;
   }
 
   @media (min-width: @tablet-width) {
     height: 290px;
-    background-color: #ffffff;
-    background-image: url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop.jpg");
+    background-color: #81b3d2;
+    background-image: url("../../img/tablet-intro-triangle.svg"), url("../../img/SEDONA-letters-desktop.svg"), url("../../img/back-tablet-catalog.jpg");
     background-repeat: no-repeat;
-    background-position: center center, center;
+    background-position: bottom, 157px 95px, center;
 
     @media (min-resolution: 2dppx) {
       height: 290px;
-      background-image: url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop2x.jpg");
-      background-size: 457px auto, 768px 100%;
+      background-image: url("../../img/tablet-intro-triangle.svg"), url("../../img/SEDONA-letters-desktop.svg"), url("../../img/back-tablet-catalog2x.jpg");
+      background-size: 100%, 457px auto, 768px 100%;
     }
   }
 
   @media (min-width: @desktop-width) {
     height: 290px;
-    background-color: #ffffff;
-    background-image: url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop.jpg");
+    background-color: #81b3d2;
+    background-image: url("../../img/desktop-intro-triangle.svg"), url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop.jpg");
     background-repeat: no-repeat;
-    background-position: center center, center;
+    background-position: 0 234px, 369px 100px, center bottom;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop2x.jpg");
-      background-size: 457px auto, 1200px 100%;
+      background-image: url("../../img/desktop-intro-triangle.svg"), url("../../img/SEDONA-letters-desktop.svg"), url("../../img/catalog-back-desktop2x.jpg");
+      background-size: 100%, 457px auto, 1200px 100%;
     }
   }
 }

@@ -9,7 +9,7 @@
 
 .review__wrapper {
   @media (max-width: @mobile-width-only) {
-    padding: 36px 7px 4px 7px;
+    padding: 20px 7px 4px 7px;
   }
 
   @media (min-width: @tablet-width) {
@@ -28,11 +28,12 @@
   color: #333333;
 
   @media (max-width: @mobile-width-only) {
-    margin: 24px 7px 0;
+    margin: 22px 7px 0;
   }
 
   @media (min-width: @tablet-width) {
     line-height: 24px;
+    margin-top: 0;
   }
 }
 
@@ -44,6 +45,8 @@
   @media (min-width: @tablet-width) {
     font-size: 30px;
     padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -85,26 +88,63 @@
   @media (max-width: @mobile-width-only) {
     width: 280px;
     height: 58px;
-    margin: 22px 20px 54px;
+    margin: 32px 20px 1px;
     padding: 0;
-    padding-top: 6px;
-    font-size: 18px;
+    font-size: 21px;
   }
 
   @media (min-width: @tablet-width) {
-    width: 42%;
-    margin-left: 8%;
-    margin-right: 50%;
-    margin-top: 48px;
-    margin-bottom: 64px;
-    font-size: 18px;
+    width: 324px;
+    margin: 46px 132px 64px 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 32%;
-    margin-left: 18%;
-    margin-right: 50%;
-    margin-top: 42px;
+    width: 384px;
+    margin-right: 156px;
+    margin-top: 44px;
     margin-bottom: 60px;
+    padding-top: 22px;
+  }
+}
+
+.review-form__important {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #33333399;
+  margin: 0;
+
+  @media (max-width: @mobile-width-only) {
+    padding-left: 163px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-top: 68px;
+    margin-left: 88px;
+    font-size: 14px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 70px;
+    margin-left: 68px;
+  }
+}
+
+.review-form__footer {
+  display: grid;
+
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0 60px;
+    grid-template-columns: 400px 248px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 216px;
+    grid-template-columns: 540px 228px;
   }
 }

@@ -9,8 +9,11 @@
   position: relative;
 }
 
+.navigation__link--current {
+  color: #766357;
+}
 
-.navigation__list a {
+.navigation__link--menu {
   color: #000000;
 }
 
@@ -28,6 +31,7 @@
   padding: 0;
 }
 
+
 // Мобилка
 
 @media (max-width: @mobile-width-only) {
@@ -35,11 +39,11 @@
     content: "";
     position: absolute;
     top: 17px;
-    left: 17px;
+    left: 12px;
     width: 22px;
     height: 4px;
     background-color: #81b3d2;
-    box-shadow: 0 5px 0 0 #81b3d2, 0 10px 0 0 #81b3d2;
+    box-shadow: 0 8px 0 0 #81b3d2, 0 16px 0 0 #81b3d2;
   }
 
   .navigation--closed .navigation__toggle:active::before {
@@ -76,7 +80,7 @@
   .navigation--opened .navigation__list {
     position: relative;
     width: 320px;
-    min-height: 55px;
+    min-height: 56px;
     background: #81b3d2;
     margin: 0;
     padding: 0;
@@ -84,8 +88,8 @@
   }
 
   .navigation--closed .navigation__list {
-    width: 100%;
-    height: 56px;
+    width: 320px;
+    min-height: 56px;
     padding: 0;
     margin: 0;
   }
@@ -227,7 +231,6 @@
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
   }
 }
 
