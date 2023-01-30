@@ -11,7 +11,6 @@
     <link rel="manifest" href="./manifest.webmanifest.json">
   </head>
   <body class="page__body">
-
     <svg style="display: none;">
       <symbol viewbox="0 0 48 48" id="vk-icon">
         <path fill="#currenColor" d="M0 0h48v48H0z"/>
@@ -33,26 +32,23 @@
         <path class="socials-inner" d="M31.181 17H16.813C15.306 17 14 18.3 14 19.8v8.3c0 1.6 1.306 2.9 2.813 2.9h14.368c1.608 0 2.814-1.3 2.814-2.8v-8.4c.1-1.5-1.206-2.8-2.814-2.8ZM21.033 27.4v-6.8l6.833 3.4-6.833 3.4Z" fill="#fff"/>
       </symbol>
     </svg>
-
-
     <div class="page__container">
       <header class="main-header">
         <nav class="navigation navigation--closed navigation--nojs">
-          <a class="navigation__logo">
+          <a class="navigation__logo" href="index.html">
             <img class="navigation__logo-image" src="./img/logotype.svg" width="185" height="96" alt="Логотип Седоны.">
           </a>
           <button class="navigation__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <!-- <div class="navigation__wrapper"> -->
             <ul class="navigation__list site-list">
               <li class="navigation__item">
-                <a class="navigation__link " href="index.html">
+                <a class="navigation__link navigation__link--menu" href="index.html">
                   Главная
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="catalog.html">
+                <a class="navigation__link navigation__link--menu" href="catalog.html">
                   Фото и видео
                 </a>
               </li>
@@ -62,15 +58,15 @@
                 </a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="https://htmlacademy.ru/">
+                <a class="navigation__link navigation__link--menu" href="https://htmlacademy.ru/">
                   HTML Academy
                 </a>
               </li>
             </ul>
         </nav>
       </header>
-      <main class="main-container main-container-cover">
-        <div class="main-container-cover__catalog">
+      <main class="main-container">
+        <div class="cover-catalog">
           <h1 class="visually-hidden">Welcome to the georgeous Sedona</h1>
         </div>
         <section class="review">
@@ -200,59 +196,62 @@
                 <p class="emotions__header form__title">Опишите свои эмоции:</p>
               </div>
               <div class="emotions__item">
-                <textarea class="emotions__emotions-text input" placeholder="Опишите подробно все свои восторги"></textarea>
+                <label class="visually-hidden" for="emotions-text">Опишите все свои восторги</label>
+                <textarea class="emotions__emotions-text input" placeholder="Опишите подробно все свои восторги" id="emotions-text"></textarea>
               </div>
             </fieldset>
           </div>
         </section>
-        <button class="review-form__button button" type="submit">Отправить отзыв</button>
+        <div class="review-form__footer">
+          <button class="review-form__button button" type="submit">Отправить отзыв</button>
+          <p class="review-form__important">* — обязательные поля</p>
+        </div>
       </form>
       </main>
       <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__hashtag hashtag">
-            <h2 class="footer__hashtag-text">#visitsedona</h2>
+          <div class="footer__wrapper">
+            <div class="footer__hashtag hashtag">
+              <h2 class="footer__hashtag-text">#visitsedona</h2>
+            </div>
+            <div class="footer__socials socials">
+              <b class="visually-hidden">Давайте дружить!</b>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
+                    <svg class="footer__link-svg" width="48" height="48">
+                      <use xlink:href="#vk-icon"></use>
+                    </svg>
+                  <span class="visually-hidden">Мы в ВКонтакте</span>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
+                    <svg class="footer__link-svg" width="48" height="48">
+                      <use xlink:href="#tg-icon"></use>
+                    </svg>
+                    <span class="visually-hidden">Мы в Телеграм</span>
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                    <svg class="footer__link-svg" width="48" height="48">
+                      <use xlink:href="#youtube-icon"></use>
+                    </svg>
+                    <span class="visually-hidden">Мы в Ютуб</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__copyright copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <p class="copyright__text">Разработано</p>
+                <svg aria-hidden="true" focusable="false" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="currentColor"/></svg>
+                <span class="visually-hidden">HTML Academy</span>
+              </a>
+            </div>
           </div>
-          <div class="footer__socials socials">
-            <b class="visually-hidden">Давайте дружить!</b>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link footer__link--vkontakte" href="https://vk.com/htmlacademy">
-                  <svg class="footer__link-svg" width="48" height="48">
-                    <use xlink:href="#vk-icon"></use>
-                  </svg>
-                <span class="visually-hidden">Мы в ВКонтакте</span>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link footer__link--telegram" href="https://t.me/htmlacademy">
-                  <svg class="footer__link-svg" width="48" height="48">
-                    <use xlink:href="#tg-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Телеграм</span>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                  <svg class="footer__link-svg" width="48" height="48">
-                    <use xlink:href="#youtube-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Мы в Ютуб</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/">
-              <p class="copyright__text">Разработано</p>
-              <svg aria-hidden="true" focusable="false" width="27" height="35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z" fill="currentColor"/></svg>
-              <span class="visually-hidden">HTML Academy</span>
-            </a>
-          </div>
-        </div>
       </footer>
     </div>
-
     <div class="page__modal-window page__modal-window--closed">
       <section class="modal-window modal-window--failure modal-window--failure-closed">
         <h2 class="modal-window__title">Что-то пошло не так!</h2>
@@ -273,7 +272,6 @@
         </div>
       </section>
     </div>
-
     <script src="./js/script.js"></script>
     </body>
   </html>

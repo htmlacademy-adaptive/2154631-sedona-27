@@ -37,7 +37,7 @@ const html = () => {
   .pipe(gulp.dest('build'));
 }
 
-// Scripts 
+// Scripts
 
 const scripts = () => {
   return gulp.src('source/js/*.js')
@@ -83,7 +83,7 @@ const sprite = () => {
   }))
   .pipe(rename ('sprite.svg'))
   .pipe(gulp.dest('build/img'));
-} 
+}
 
 // Copy
 
@@ -126,7 +126,8 @@ const server = (done) => {
 
 const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch('source/*.html', gulp.series(html));
+  gulp.watch('build/*.html').on('change', browser.reload);
 }
 
 // Build
